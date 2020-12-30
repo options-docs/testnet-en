@@ -930,7 +930,7 @@ timestamp | LONG | YES |  |
  You can extend the validity period by 60 minutes by performing a PUT listenKey operation.
  You can immediately terminate the current data stream by performing a DELETE listenKey operation, which will render that listenKey invalid.
  Performing a POST operation on an account with a valid listenKey will return the current valid listenKey and extend its validity period by 60 minutes. 
- The baseurl of the websocket interface is: wss://testnetws.binanceops.com:9443 
+ The baseurl of the websocket interface is: wss://testnetws.binanceops.com 
  User Data Streams are accessed at /ws/ or /stream?streams=
  Each link can be valid for no more than 24 hours. Please be sure to handle disconnection/reconnection appropriately.
  Account data stream info is not guaranteed to be in strict chronological order. Please use the E field for sorting.
